@@ -1,0 +1,21 @@
+<html>
+	<header>
+		<meta charset='utf-8'>
+		<title>Arenas Planetárias</title>
+		<meta name='viewport' content='width=devid-width, inicial-scale=1.0'>
+	</header>
+	
+	<body>
+		<h1>Arenas Planetárias</h1>
+			
+			<h3>Arenas Disponíveis</h3>
+			
+			<tr th:each="planeta : ${planetas}">
+				<span th:text="${planeta.nome}"></span>
+				<span th:text="${planeta.tamanho}"></span>
+				<span th:text="${planeta.gravidade}"></span>
+				<p></p>
+				
+			</trth>	
+	</body>
+</html>
